@@ -1091,6 +1091,8 @@ source "arch/arm/plat-s3c24xx/Kconfig"
 
 source "arch/arm/mach-socfpga/Kconfig"
 
+source "arch/arm/mach-sunxi/Kconfig"
+
 source "arch/arm/plat-spear/Kconfig"
 
 source "arch/arm/mach-s3c24xx/Kconfig"

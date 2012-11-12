@@ -192,6 +192,7 @@ machine-$(CONFIG_ARCH_SOCFPGA)		+= socfpga
 machine-$(CONFIG_ARCH_SPEAR13XX)	+= spear13xx
 machine-$(CONFIG_ARCH_SPEAR3XX)		+= spear3xx
 machine-$(CONFIG_MACH_SPEAR600)		+= spear6xx
+machine-$(CONFIG_ARCH_SUNXI)		+= sunxi
 machine-$(CONFIG_ARCH_ZYNQ)		+= zynq
 
 # Platform directory name.  This list is sorted alphanumerically

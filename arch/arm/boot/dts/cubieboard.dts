@@ -1,0 +1,36 @@
+/*
+ * Copyright 2012 Stefan Roese <sr@denx.de>
+ *
+ * The code contained herein is licensed under the GNU General Public
+ * License. You may obtain a copy of the GNU General Public License
+ * Version 2 or later at the following locations:
+ *
+ * http://www.opensource.org/licenses/gpl-license.html
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+
+/dts-v1/;
+/include/ "sun4i.dtsi"
+
+/ {
+	model = "Cubieboard";
+	compatible = "allwinner,cubieboard", "allwinner,sun4i";
+	#address-cells = <1>;
+	#size-cells = <1>;
+
+	memory {
+		device_type = "memory";
+		reg = <0x40000000 0x40000000>;
+	};
+
+	ahb {
+		serial@01c28000 {
+			clock-frequency = <24000000>;
+			status = "okay";
+		};
+
+		ethernet@01c0b000 {
+			status = "okay";
+		};
+	};
+};

@@ -1,0 +1,9 @@
+config ARCH_SUNXI
+	bool "Allwinner sun4i (A10) and sun5i (A13)" if ARCH_MULTI_V7
+	select ARM_AMBA
+	select CACHE_L2X0
+	select CLKDEV_LOOKUP
+	select COMMON_CLK
+	select CPU_V7
+	select GENERIC_CLOCKEVENTS
+	select USE_OF
